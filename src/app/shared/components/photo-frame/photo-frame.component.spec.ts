@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { LikeWidgetComponent } from '../like-widget/like-widget.component';
 import { PhotoFrameComponent } from './photo-frame.component';
 import { PhotoFrameModule } from './photo-frame.module';
 
