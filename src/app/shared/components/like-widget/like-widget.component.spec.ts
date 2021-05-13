@@ -62,4 +62,24 @@ describe(LikeWidgetComponent.name, () => {
       expect(spy).toHaveBeenCalled();
     });
   });
+
+  describe('DOM events', () => {
+    it('should display number of likes when clicked', (done) => {
+      fixture.detectChanges();
+      const counterElement: HTMLElement = fixture.nativeElement.querySelector(
+        '.like-counter'
+      );
+      const containerElement: HTMLElement = fixture.nativeElement.querySelector(
+        '.like-widget-container'
+      );
+      component.liked.subscribe(() => {
+        component.likes++;
+        fixture.detectChanges();
+        expect(counterElement.textContent.trim()).toBe('1');
+        done();
+      });
+
+      containerElement.click();
+    });
+  });
 });
