@@ -1,20 +1,8 @@
 import { SimpleChange, SimpleChanges } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { Photo } from './interfaces/photo.model';
+import { buildPhotoList } from '../../helpers/Test/Mocks/build-photos.mock';
 import { PhotoBoardComponent } from './photo-board.component';
 import { PhotoBoardModule } from './photo-board.module';
-
-function buildPhotoList(): Photo[] {
-  const photos = [
-    { id: '1', url: 'http://minhafoto.jpg', description: 'picture of test' },
-    { id: '2', url: 'http://minhafoto2.jpg', description: 'picture of test2' },
-    { id: '3', url: 'http://minhafoto3.jpg', description: 'picture of test3' },
-    { id: '4', url: 'http://minhafoto4.jpg', description: 'picture of test4' },
-    { id: '5', url: 'http://minhafoto5.jpg', description: 'picture of test5' },
-    { id: '6', url: 'http://minhafoto6.jpg', description: 'picture of test6' },
-  ];
-  return photos;
-}
 
 describe(PhotoBoardComponent.name, () => {
   let fixture: ComponentFixture<PhotoBoardComponent>;
@@ -41,5 +29,11 @@ describe(PhotoBoardComponent.name, () => {
     };
     component.ngOnChanges(change);
     expect(component.rows.length).toBe(2);
+  });
+  it('should not display rows and columns when @Input photos no has value', () => {
+    fixture.detectChanges();
+    const change: SimpleChanges = {};
+    component.ngOnChanges(change);
+    expect(component.rows.length).toBe(0);
   });
 });
