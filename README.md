@@ -1,6 +1,6 @@
 # Testes unitários em Angular com Jasmine e Karma
 
-Este é um resumo dos cursos: 
+Este repositório é resultado da implementação feita durante os cursos: 
 
 [Curso Online Angular: Testes automatizados com Jasmine e Karma | Alura](https://cursos.alura.com.br/course/angular-testes-automatizados-jasmin-karma)
 
