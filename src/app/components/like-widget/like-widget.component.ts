@@ -1,6 +1,6 @@
 import { Component, Output, EventEmitter, Input, OnInit } from '@angular/core';
 import { faThumbsUp } from '@fortawesome/free-solid-svg-icons';
-import { UniqueIdService } from '../../services/unique-id/unique-id.service';
+import { UniqueIdService } from '../../shared/services/unique-id/unique-id.service';
 
 @Component({
   selector: 'app-like-widget',

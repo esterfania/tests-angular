@@ -1,4 +1,4 @@
-import { Photo } from 'src/app/shared/components/photo-board/interfaces/photo.model';
+import { Photo } from 'src/app/components/photo-board/interfaces/photo.model';
 
 export function buildPhotoList(): Photo[] {
   const photos = [

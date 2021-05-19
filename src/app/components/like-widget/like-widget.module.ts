@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { LikeWidgetComponent } from './like-widget.component';
-import { UniqueIdService } from '../../services/unique-id/unique-id.service';
-import { ActionDirectiveModule } from '../../directives/action/action.module';
+import { UniqueIdService } from '../../shared/services/unique-id/unique-id.service';
+import { ActionDirectiveModule } from '../../shared/directives/action/action.module';
 
 @NgModule({
   declarations: [LikeWidgetComponent],

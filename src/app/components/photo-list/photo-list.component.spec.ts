@@ -8,7 +8,7 @@ import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { PhotoBoardService } from '../photo-board/services/photo-board.service';
 import { PhotoListComponent } from './photo-list.component';
 import { PhotoListModule } from './photo-list.module';
-import { buildPhotoList } from '../../helpers/Test/Mocks/build-photos.mock';
+import { buildPhotoList } from '../../shared/helpers/Test/Mocks/build-photos.mock';
 import { of } from 'rxjs/internal/observable/of';
 import { Observable } from 'rxjs';
 import { Photo } from '../photo-board/interfaces/photo.model';

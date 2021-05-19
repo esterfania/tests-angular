@@ -1,6 +1,6 @@
 import { SimpleChange, SimpleChanges } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { buildPhotoList } from '../../helpers/Test/Mocks/build-photos.mock';
+import { buildPhotoList } from '../../shared/helpers/Test/Mocks/build-photos.mock';
 import { PhotoBoardComponent } from './photo-board.component';
 import { PhotoBoardModule } from './photo-board.module';
 
